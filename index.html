@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Criativa Web</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Agência Criativa Web
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a><lil>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="banner">
+        <div class="banner-texto">
+            <h1>Transformamos ideias em experiências digitais</h1>
+
+            <p>Criamos sites modernos, identidades visuias e soluções criativas para destacar sua marca.</p>
+
+            <button>Saiba Mais</button>
+        </div>
+
+        <picture>
+            <source media="(max-width: 768px)" srcset="imagens/banner-mobile.png">
+            <img src="imagens/banner.png" alt="Banner Agência">
+        </picture>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="sobre-imagem">
+            <img src="imagens/equipe.png" alt="Equipe Criativa">
+        </div>
+
+        <div class="sobre-texto">
+            <h2>Sobre Nós</h2>
+
+            <p>Somos uma agência especializada em desing digital, branding e desenvolvimento web.
+                Nosso objetivo é ajudar empresas a criarem presença digital forte e impactante.
+            </p>
+
+            <p>Trabalhamos com criatividade, inovação e foco total na experiência do usuário.</p>
+        </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+        <h2>Nossos Serviços</h2>
+
+        <div class="grid-servicos">
+            <div class="card">
+                <h3>Desing Gráfico</h3>
+                <p>Criação de materiais visuais modernos e profissionais.</p>
+            </div>
+
+            <div class="card">
+                <h3>Desenvolvimento Web</h3>
+                <p>Sites responsivos, rápidos e adaptados para todos os dispositivos.</p>
+            </div>
+
+            <div class="card">
+                <h3>Branding</h3>
+                <p>Construção de identidade visual forte para sua marca.</p>
+            </div>
+
+            <div class="card">
+                <h3>UX/UI Desing</h3>
+                <p>Interfaces modernas focadas na experiência do usuário.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="depoimentos">
+        <h2>O que nossos clientes dizem</h2>
+
+        <div id="cards-depoimentos">
+            <div class="depoimento">
+                <p>"A equipe trasnfotmou completamente nossa presença digital!"</p>
+                <h4>— Mariana Silva</h4>
+            </div>
+
+            <div class="depoimento">
+                <p>"Profissionais extremamente criativos e atenciosos."</p>
+                <h4>— Lucas Mendes</h4>
+            </div>
+
+            <div class="depoimento">
+                <p>"Nosso site ficou moderno, rápido e muito bonito."</p>
+                <h4>— Fernanda Costa</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Entre em contato</h2>
+
+        <div class="contato-container">
+            <div class="info-contato">
+                <p><strong>Endereço:</strong> Porto Alegre - RS</p>
+                <p><strong>Telefone:</strong> (51) 99999-9999</p>
+                <p><strong>Email:</strong> contato@agenciacriativa.com</p>
+            </div>
+
+            <form>
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <textarea placeholder="Sua mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <footer>
+            <p>&copy; 2026 Agência Criativa Web - Todos os direitos reservados.</p>
+        </footer>
+    </section>
+</body>
+</html>
