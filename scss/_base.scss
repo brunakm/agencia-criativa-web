@@ -1,0 +1,20 @@
+@use 'variaveis' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fonte-principal;
+    background-color: $cor_fundo;
+    color: $cor-escura;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}

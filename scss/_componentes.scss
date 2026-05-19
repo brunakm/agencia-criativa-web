@@ -1,0 +1,85 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+/* botão */
+.botao {
+    @include botao-padrao;
+    display: inline-block;
+    margin-top: 1.5rem;
+    background-color: $cor-escura;
+    color: $cor-clara;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $cor-clara;
+        color: $cor-escura;
+    }
+}
+
+/* serviços */
+.servicos {
+    padding: $espacamento-medio 8%;
+    text-align: center;
+
+    &__titulo {
+        margin-bottom: 3rem;
+        font-size: 2rem;
+    }
+
+    &__card {
+        background-color: $cor-escura;
+        color: $cor-clara;
+        padding: 1.5rem;
+        border-radius: $borda-arredondada;
+        transition: $transicao-padrao;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+
+    &__card-titulo {
+        margin-bottom: 1rem;
+    }
+}
+
+/* gird */
+.gir__servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* depoimenttos */
+.depoimentos {
+    @include section-padding;
+    text-align: center;
+
+    &__titulo {
+        font-size: 2rem;
+    }
+
+    &__cards {
+        display: flex;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    &__card {
+        background-color: $cor-clara;
+        padding: $espacamento-medio;
+        border-radius: $borda-arredondada;
+    }
+}
+
+/* responsividade */
+
+@media (max-width: 768px) {
+    .grid__servicos {
+        grid-template-columns: 1fr;
+    }
+
+    .depoimentos__cards {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,151 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+/* header */
+.header {
+    width: 100%;
+    padding: $espacamento-pequeno 8%;
+    @include flex-center;
+    justify-content: space-between;
+    background-color: $cor-escura;
+    color: $cor-clara;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    &__logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: $espacamento-pequeno;
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $cor-clara;
+        transition: $transicao-padrao;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+/* banner */
+.banner {
+    min-height: 50vh;
+    padding: $espacamento-medio 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+
+    &__conteudo {
+        flex: 1;
+    }
+
+    &__titulo {
+        font-size: 2.2rem;
+    }
+
+    &__imagem img {
+        max-width: 500px;
+        border-radius: $borda-arredondada;
+    }
+}
+
+/* sobre */
+.sobre {
+    @include section-padding;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    &__imagem img {
+        max-width: 450px;
+        border-radius: $borda-arredondada;
+    }
+
+    &__titulo {
+        font-size: 2rem;
+        margin-bottom: calc($espacamento-pequeno / 2);
+    }
+}
+
+/* contato */
+.contato {
+    @include section-padding;
+    
+    &__titulo {
+        text-align: center;
+        margin-bottom: $espacamento-medio;
+    }
+
+    &__contaoner {
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    &__info {
+        width: 40%;
+    }
+
+    &__form {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: $espacamento-pequeno;
+    }
+
+    &__input,
+    &__textarea {
+        padding: $espacamento-pequeno;
+        border: none;
+        border-radius: 10px;
+        font-family: inherit;
+    }
+
+    &__textarea {
+        min-height: 150px;
+        resize: none;
+    }
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    padding: $espacamento-medio;
+    background-color: $cor-escura;
+    color: $cor-clara;
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+
+        &__menu {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .banner,
+    .sobre,
+    .contato__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contato__info,
+    .contato__form {
+        width: 100%;
+    }
+}

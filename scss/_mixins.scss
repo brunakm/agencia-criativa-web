@@ -1,0 +1,22 @@
+@use 'variaveis' as *;
+
+// flex
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// botão
+@mixin botao-padrao {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: $transicao-padrao;
+}
+
+// sessão padrão
+@mixin section-padding {
+    padding: $espacamento-grande 8%;
+}
