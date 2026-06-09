@@ -1,5 +1,9 @@
 # Agência Criativa Web 🌐
 
+<p align="center">
+  <img src="assets/agencia.png" alt="Preview do projeto" width="800">
+</p>
+
 Projeto desenvolvido como atividade acadêmica com o objetivo de criar uma landing page moderna e responsiva para uma agência digital, aplicando boas práticas de organização de código e estilização com SASS.
 
 ## 📋 Sobre o Projeto
